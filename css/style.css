@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+
+}
+#subtitle{
+   background-color: transparent;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to left top, #000570, #040989, #0a0da3, #1212be, #1917d9, #003ee9, #005af5, #0073ff, #0097ff, #00b6ff, #00d1ff, #00e9ff);
+   
+}
+nav{
+    padding: 0.625rem;
+    position: fixed;
+    top: 8.625rem;
+    right: 0.625rem;
+    border-radius: 15px;
+    transition: 0.3s;
+    
+
+}
+
+
+nav:hover{
+    padding: 0.938rem;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.5);
+      
+}
+nav:hover a{
+    color: black;
+}
+nav ul{
+    padding: 10px;
+    margin: 10px;
+}
+h1{
+    margin: 0 auto;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+a:hover{
+    background-color: #7019E6;
+   
+}
+img{
+
+    min-height: 3.125rem;
+    max-width: 50rem;
+}
+header{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#navegacao{
+    list-style: none;
+    color: white;
+
+}
+
+#corpo{
+    border: #a9a9a9 solid 1px;
+    background-color: white;
+    margin-top: 3.125rem;
+    margin-left: 9.375rem;
+    margin-right: 9.375rem;
+    margin-bottom: 9.375rem;
+    padding: 50px;
+    border-radius: 15px;
+   
+
+}
+#subtitle{
+    padding: 0.625rem;
+    border: solid 1px black;
+    background-color: white;
+    border-radius: 15px;
+}
+#title{
+    margin-left: 500px;
+    margin-right: 500px;
+
+}
+
+
+/* EXEMPLOS */
+#ID{
+    background-color: red;
+}
+.CLASS{
+    background-color: blue;
+}
+
+.CLASS5{
+    background-color: purple;
+}
+
+h1{
+    
+    background-color: green;
+}
+
+
+.CLASS2{
+    background-color: blue;
+}
+h1.CLASS2{
+    background-color: green;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" type="image/x-icon" href="img/css.png">
+
+    <title>Especificidade do CSS</title>
+  </head>
+
+  <body>
+    <nav id="menu">
+      <ul id="navegacao">
+        <li><a href="#conceito">Conceito</a></li>
+        <li><a href="#utilização">Utilização</a></li>
+        <li><a href="#!important">!important</a></li>
+        <li><a href="#conclusao">Conclusão</a></li>
+        
+      </ul>
+    </nav>
+    <header id="title">
+
+      <h1 id="subtitle">Especificidade do CSS</h1>
+
+    </header>
+    <div id="corpo">
+      
+  
+      <section id="conceito">
+  
+        <h2>O que é a Especificidade do CSS?</h2>
+      
+        <div>
+          <p>
+            Especificidade é um conceito que determina a regra que será aplicada a um 
+            elemento, isso quando existem mais de uma regra que venha a conflitar com 
+            as outras. Quando há conflitos, a especificidade define qual é a regra de 
+            maior valor.Ela tem como base as diferentes regras dos diferentes 
+            tipos de valores. É importante entender a especificidadepara evitar conflitos 
+            indesejados e garantir que os estilos sejam aplicados corretamente aos elementos 
+            desejados.
+          </p>
+        </div>
+      </section>
+      <section id="utilização">
+        <h2>Como utilizar a especificidade do CSS corretamente?</h2>
+  
+        <div>
+          <p>
+            Para conseguirmos utilizar a especificidade do CSS corretamente,
+            primeiro devemos entender como funciona.
+          </p>
+          <p>
+            Dentro dos elementos do HTML existe um sistema que prioriza a 
+            estilização deles. Quando a estilização do CSS é aplicada diretamente 
+            a uma tag, essa tag passa a ter um valor maior do que o CSS 
+            incorporado a página ou ao CSS Externo. A ordem de maiores valores neste caso é:
+          </p>
+          <ol>
+            <li>CSS aplicado na tag</li>
+            <li>CSS incorporado na página</li>
+            <li>CSS em página Externa</li>
+          </ol>
+          <p>
+            Veja no exemplo abaixo como funciona na prática a priorização do CSS aplicado 
+            diretamente na tag e o CSS incorporado na página:</p>
+        </div>
+  
+        <div>
+          <img src="img/code-h1-utilizacao.png" alt="" id="first-html">
+          <img src="img/code-h1-utilizacao(css).png" alt="" id="first-css">
+          <h1 style="background-color: blue;">Meu primeiro CSS</h1>
+          
+        </div>
+  
+        <h2>Usando a Especificidade no CSS Externo</h2>
+  
+        <div>
+          <p>
+            Quando utilizamos o CSS externo, outras regras de especificidades são aplicadas e 
+            a priorização de estilo nos elementos mudam.
+          </p>
+  
+          <h3>1 -   O ID tem um valor maior que Classe</h3>
+  
+          <p>
+            Apesar de sabermos que o ID só pode ser usado uma única vez dentro de uma tag no HTML, 
+            o ID é um exército de um homem só, podendo ser mais prioritário do que infinitas classes 
+            dentro de um elemento. Quando você tem ID (s) no seu seletor, o número de classes se tornará 
+            irrelevante.
+          </p>
+        </div>
+        <div>
+          <img src="img/code-h1-utilizacao-Id-vs-class.png" alt="" id="">
+          <img src="img/code-h1-utilizacao-Id-vs-class(css).png" alt="" id="">
+          <h1 id="ID" class="CLASS">Meu primeiro CSS</h1>
+        </div>
+        <div>
+          <h3>2 - Tag + Classe</h3>
+  
+          <p>
+            Como segunda opção mais forte de prioridade temos a Tag + Classe. Ela acaba recebendo mais prioridade 
+            do que apenas a Classe justamente por ser mais específica, onde ela faz com que o seletor se 
+            junte a uma Classe, se tornando mais fácil localizar no HTML onde será feito a estilização do CSS.
+          </p>
+        </div>
+        <div>
+          <img src="img/" alt="" id="first-html">
+          <img src="img/css-naosei.png" alt="" id="first-html">
+          <h1 class="CLASS2">Meu primeiro CSS</h1>
+          <h1></h1>
+        </div>
+        <div>
+          <h3>3 - Classe</h3>
+  
+          <p>
+            Em terceiro nós temos a Classe, que recebe uma prioridade maior do que o seletor de tag simples.
+          </p>
+        </div>
+        <div>
+          <img src="IMG/code-h1-class5.png" alt="" id="first-html">
+          <img src="IMG/code-h1-class5(css).png" alt="" id="first-css">
+          <h1 class="CLASS5">Meu primeiro CSS</h1>
+        </div>
+        <div>
+          <h3>4 - Tag simples</h3>
+          <p>
+            E por ultimo, em ordem de importancia, temos a tag simples, que tem prioridade menor do que os outros seletores.
+          </p>
+        </div>
+        <div>
+        </div>
+      </section>
+      <section id="!important">
+        <h2>Important</h2>
+  
+        <div>
+          <p>
+            O valor "!important" é uma declaração que pode ser adicionada a uma regra CSS para dar-lhe a máxima 
+            especificidade. Isso significa que as propriedades marcadas com "!important" terão prioridade sobre 
+            outras regras, independentemente da especificidade delas.
+          </p>
+          <p>
+            No entanto, é importante ter cuidado ao usar "!important", pois seu uso excessivo pode levar o código 
+            difícil de manter e a problemas de escalabilidade. 
+          </p>
+          <p>
+            Em geral, é recomendado evitar o uso de "!important" sempre que possível e, em vez disso, priorizar 
+            uma boa organização do código CSS e o uso adequado de seletores específicos.
+          </p>
+        </div>
+      </section>
+      <section id="conclusao">
+        <h2>Conclusão</h2>
+  
+        <div>
+          <p>
+            A especificidade de CSS é um conceito importante para entender como as regras de estilo são aplicadas 
+            aos elementos em uma página web. Ao compreender como os seletores são avaliados e como a especificidade é 
+            calculada, você pode evitar conflitos indesejados e garantir que os estilos sejam aplicados corretamente.
+          </p>
+          <p>
+            Além disso, é fundamental usar de forma adequada, evitando o uso excessivo de seletores específicos ou a 
+            depêndenciaexcessiva do valor "Important". Uma boa organização do código CSS e a adoçãode boas práticas de 
+            desenvolvimento ajudarão a criar estilos concientes e facíl de manter. 
+          </p>
+          <p>
+            Compreender a especificidade de CSS é essencial para qualquer desenvolvedor web que deseja criar layouts  
+            flexíveis e estilizados de forma eficiente. Lembre-se de praticar e explorar diferentes cenários para aprofundar 
+            seus conhecimentos sobre esse conceito. 
+          </p>
+        </div>
+      </section>
+
+    </div>
+    
+      
+  </body>
+</html>
