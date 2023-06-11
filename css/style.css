@@ -4,9 +4,6 @@ html{
     scroll-behavior: smooth;
 
 }
-#subtitle{
-   background-color: transparent;
-}
 body{
     font-family: 'Roboto', sans-serif;
     background-image: linear-gradient(to left top, #000570, #040989, #0a0da3, #1212be, #1917d9, #003ee9, #005af5, #0073ff, #0097ff, #00b6ff, #00d1ff, #00e9ff);
@@ -15,7 +12,7 @@ body{
 nav{
     padding: 0.625rem;
     position: fixed;
-    top: 8.625rem;
+    top: 9.625rem;
     right: 0.625rem;
     border-radius: 15px;
     transition: 0.3s;
@@ -24,15 +21,12 @@ nav{
 }
 
 
+
 nav:hover{
-    padding: 0.938rem;
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.5);
+    
       
 }
-nav:hover a{
-    color: black;
-}
+
 nav ul{
     padding: 10px;
     margin: 10px;
@@ -48,12 +42,13 @@ a{
     transition: 0.3s;
 }
 a:hover{
-    background-color: #7019E6;
+    color: black;
+    background-color: #c1c1c1;
    
 }
 img{
 
-    min-height: 3.125rem;
+    max-height: 50rem;
     max-width: 50rem;
 }
 header{
@@ -79,17 +74,21 @@ header{
    
 
 }
+
 #subtitle{
     padding: 0.625rem;
-    border: solid 1px black;
+    height: 35px;
+    width: 500px;
+    background-color: transparent;
+    border: solid 1px #a9a9a9;
     background-color: white;
     border-radius: 15px;
 }
 #title{
-    margin-left: 500px;
-    margin-right: 500px;
+   
 
 }
+
 
 
 /* EXEMPLOS */
@@ -116,3 +115,10 @@ h1{
 h1.CLASS2{
     background-color: green;
 }
+.highlight {
+    color: red !important;
+  }
+  
+  #my-paragraph {
+    color: blue ;
+  }
